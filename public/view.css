@@ -1,0 +1,11 @@
+body{
+    height: 100vh;
+}
+
+.box-edit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}

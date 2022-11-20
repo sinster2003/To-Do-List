@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+    <link href="/view.css" rel="stylesheet">
+    <title>View Task | Sindhur</title>
+</head>
+<body>
+    <%-include("include/header")%>
+    <main class="box-edit">
+        <div class="box">
+            <time datetime="<%=data.date%>"><%=data.humanReadableDate%></time>
+            <p class="task-para"><%=data.task%></p>
+        </div>
+    </main>
+</body>
+</html>

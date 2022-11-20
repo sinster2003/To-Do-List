@@ -1,0 +1,150 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+
+body
+{
+    background-color:  rgb(188, 179, 220);
+}
+
+main,.heading,.form,.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    background-color: rgb(156, 129, 253);
+    height:5rem;
+    color: rgb(240, 238, 252);
+}
+
+.todoHeading{
+    font-size: 3rem;
+}
+
+#todo
+{
+    width: 20rem;
+    height: 3rem;
+    outline: none;
+    border: 5px solid rgb(156, 129, 253);
+    border-radius: 10px;
+    padding:0 1rem;
+    margin: 0 1rem 0 0;
+    background-color: rgb(240, 238, 252);
+    color: rgb(101, 59, 251);
+}
+
+#todo::placeholder
+{
+    color: rgb(101, 59, 251);
+}
+
+.form{
+    margin: 3rem 0 0 0;
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn svg path
+{
+    color: rgb(81, 35, 248);
+}
+
+.box{
+    background-color: rgb(240, 238, 252);
+    color: rgb(101, 59, 251);
+    width: 40rem;
+    height: 10rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.listBox{
+    padding: 1rem 0;
+}
+
+.alter
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0.25rem 0 -0.25rem ;
+}
+
+.alter a{
+    text-decoration: none;
+    color: rgb(101, 59, 251);
+}
+
+.alter a:hover{
+    color: rgb(232, 72, 250);
+}
+
+.box,.box:hover{
+    transform: scale(1.05);
+    transition: transform 0.6s ease;
+}
+
+.box{
+    transform: scale(1);
+}
+
+.btn-task{
+    background-color: rgb(101, 59, 251);
+    border:none;
+    border-radius: 3px;
+    width:5rem;
+    height:2rem;
+    cursor: pointer;
+}
+
+.btn-task a,.btn-task a:hover{
+    color: rgb(240, 238, 252);
+}
+
+.btn-task:hover,.btn-edit:hover
+{
+    background-color: rgb(124, 90, 249);
+}
+
+.sub-heading
+{
+    font-size: 1.15rem;
+    color: rgb(152, 124, 252);
+}
+
+.task-para{
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    color: rgb(81, 35, 248);
+}
+
+/*
+.flip,.flipreverse{
+    transform: rotateY(180deg);
+    transition: transform 1s ease;
+}
+
+.flipreverse
+{
+    transform: rotateY(0deg);
+}
+
+.altershow
+{
+    display: flex;
+}*/

@@ -1,0 +1,30 @@
+.btn-edit{
+    color: rgb(240, 238, 252);
+    background-color: rgb(101, 59, 251);
+    border:none;
+    border-radius: 3px;
+    width:8rem;
+    height:2.75rem;
+    cursor: pointer;
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sub-heading-edit{
+    font-size: 2rem;
+    color: rgb(99, 56, 252);
+    margin: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+

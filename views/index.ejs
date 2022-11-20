@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Todo List | Sindhur</title>
+</head>
+<body>
+    <%-include("include/header")%>
+    <main>
+        <div>
+        <form action="/" method="POST" class="form">
+            <input id="todo" name="todo" placeholder="Enter Your Task" required autocomplete="off" maxlength="50"> 
+            <button type="submit" class="btn"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="3em" width="3em" xmlns="http://www.w3.org/2000/svg"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm192 472c0 4.4-3.6 8-8 8H544v152c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V544H328c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h152V328c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v152h152c4.4 0 8 3.6 8 8v48z"></path></svg></button>
+        </form>
+
+        <div class="listBox">
+        <%if(datas.length!=0){%>
+            <%for(let i=1;i<datas.length;i++){%>
+                <div class="box">
+                    <h2 class="sub-heading">Task <%=i%></h2>
+                    <p class="task-para"><%=datas[i].task%></p>
+                    <div class="alter">
+                        <a href="/data/<%=datas[i]._id%>/delete">Delete Task</a>
+                        <a href="/data/<%=datas[i]._id%>/edit">Edit Task</a>
+                        <button class="btn-task"><a href="/data/<%=datas[i]._id%>/view">View Task</a></button>
+                    </div>
+                </div>
+            <%}%>
+        <%}%>
+        </div>
+        </div>
+    </main>   
+</body>
+</html>
